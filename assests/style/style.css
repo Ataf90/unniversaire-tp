@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;  
+}
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: bisque;
+    border: 1px solid;
+}
