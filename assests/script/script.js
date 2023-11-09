@@ -9,8 +9,8 @@ console.log("mon script bien chargé ");
 // let year = data.getFullYear();
 // console.log(year);
 // Ajouter l'évenement  de click ///
-
 function calculerJoursRestants(anniversaireJour, anniversaireMois) {
+
     let date = new Date();
 
     let dateAnniversaire = new Date(date.getFullYear(), anniversaireMois - 1, anniversaireJour);
@@ -39,9 +39,10 @@ document.querySelector("#validation").addEventListener("click", (event) => {
         if(joursRestants === 0){
             let afficheImageEll = document.querySelector("#affiche_image")
             let image = document.createElement("img");
-            image.setAttribute('src',"/assests/image/joyeuxanniversaire.gif")
-            image.classList.add("image-anniversaire")
-           afficheImageEll.appendChild(image)
+                image.style.display="none";
+            image.setAttribute('src',"/assests/image/joyeuxanniversaire.gif");
+            // image.classList.add("image-anniversaire")
+            afficheImageEll.appendChild(image)
         }
 
     } else {
